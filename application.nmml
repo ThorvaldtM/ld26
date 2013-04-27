@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="ld26" package="com.ttermeer.ld26.ld26" version="1.0.0" company="Thorvald ter Meer" />
+	
+	<!-- output -->
+	<app main="com.ttermeer.ld26.Main" file="ld26" path="bin" />
+	
+	<window background="#FFFFFF" fps="60" />
+	<window width="480" height="320" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="nme" />
+	<haxelib name="actuate" />
+	
+	<!-- assets -->
+	<icon path="assets/nme.svg" />
+	<assets path="assets/img" rename="img" />
+	<assets path="assets/data" rename="data" />
+	
+	<!-- optimize output -->
+	<haxeflag name="--dead-code-elimination" unless="haxe3" />
+	<haxeflag name="-dce" if="haxe3" />
+	
+</project>

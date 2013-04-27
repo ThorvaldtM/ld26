@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<armor>
+		<id>1</id>
+		<name>Cloth</name>
+		<value>1</value>
+		<graphic>cloth</graphic>
+	</armor>
+	<armor>
+		<id>2</id>
+		<name>Leather</name>
+		<value>5</value>
+		<graphic>leather</graphic>
+	</armor>
+	<armor>		
+		<id>3</id>
+		<name>Plate</name>
+		<value>10</value>
+		<graphic>plate</graphic>
+	</armor>
+</data>

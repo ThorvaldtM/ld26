@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<weapon>
+		<id>1</id>
+		<name>Sword</name>
+		<graphic>sword</graphic>
+		<value>10</value>
+	</weapon>
+	<weapon>
+		<id>2</id>
+		<name>Sword +1</name>
+		<graphic>sword</graphic>
+		<value>20</value>
+	</weapon>
+	<weapon>
+		<id>3</id>
+		<name>Bow</name>
+		<graphic>bow</graphic>
+		<value>10</value>
+	</weapon>
+	<weapon>
+		<id>4</id>
+		<name>Staff</name>
+		<graphic>staff</graphic>
+		<value>10</value>
+	</weapon>
+</data>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<hero>
+		<id>1</id>
+		<name>Warrior</name>
+		<weapons>
+			<weapon>1</weapon>
+			<weapon>3</weapon>
+		</weapons>
+		<graphic>warrior</graphic>
+		<defaults>
+			<weapon>1</weapon>
+			<armor>1</armor>
+			<skill>1</skill>
+		</defaults>
+	</hero>
+	<hero>
+		<id>2</id>
+		<name>Mage</name>
+		<weapons>
+			<weapon>2</weapon>
+		</weapons>
+		<graphic>mage</graphic>
+		<defaults>
+			<weapon>4</weapon>
+			<armor>1</armor>
+			<skill>3</skill>
+		</defaults>
+	</hero>
+	<hero>
+		<id>3</id>
+		<name>Archer</name>
+		<weapons>
+			<weapon>3</weapon>
+		</weapons>
+		<graphic>archer</graphic>
+		<defaults>
+			<weapon>3</weapon>
+			<armor>1</armor>
+			<skill>2</skill>
+		</defaults>
+	</hero>
+</data>
