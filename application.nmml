@@ -8,7 +8,7 @@
 	<!-- output -->
 	<app main="com.ttermeer.ld26.Main" file="ld26" path="bin" />
 	
-	<window background="#FFFFFF" fps="60" />
+	<window background="#000000" fps="60" />
 	<window width="480" height="320" />
 	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
 	
@@ -21,6 +21,7 @@
 	<icon path="assets/nme.svg" />
 	<assets path="assets/img" rename="img" />
 	<assets path="assets/data" rename="data" />
+	<assets path="assets/fonts" rename="fonts" />
 	
 	<!-- optimize output -->
 	<haxeflag name="--dead-code-elimination" unless="haxe3" />

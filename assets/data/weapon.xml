@@ -2,26 +2,146 @@
 <data>
 	<weapon>
 		<id>1</id>
-		<name>Sword</name>
+		<name>Bronze Sword</name>
 		<graphic>sword</graphic>
+		<type>1</type>
 		<value>10</value>
+		<gold>1</gold>
 	</weapon>
 	<weapon>
 		<id>2</id>
-		<name>Sword +1</name>
+		<name>Bronze Sword +1</name>
 		<graphic>sword</graphic>
-		<value>20</value>
+		<type>1</type>
+		<value>15</value>
+		<gold>1</gold>
 	</weapon>
 	<weapon>
 		<id>3</id>
-		<name>Bow</name>
-		<graphic>bow</graphic>
-		<value>10</value>
+		<name>Bronze Sword +2</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>20</value>
+		<gold>1</gold>
 	</weapon>
 	<weapon>
 		<id>4</id>
+		<name>Silver Sword</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>10</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>6</id>
+		<name>Silver Sword +1</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>15</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>7</id>
+		<name>Silver Sword +5</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>20</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>8</id>
+		<name>Gold Sword</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>10</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>9</id>
+		<name>Gold Sword +2</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>15</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>10</id>
+		<name>Gold Sword +8</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>20</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>11</id>
+		<name>Cutlass</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>17</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>12</id>
+		<name>Cutlass +1</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>27</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>13</id>
+		<name>Cutlass +2</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>37</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>14</id>
+		<name>Excalibur</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>1000</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>15</id>
+		<name>Fiery Dragon Sword</name>
+		<graphic>sword</graphic>
+		<type>1</type>
+		<value>100</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>16</id>
+		<name>Bow</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>8</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>17</id>
+		<name>Bow +1</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>8</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>18</id>
+		<name>Bow +3</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>8</value>
+		<gold>1</gold>
+	</weapon>
+	<weapon>
+		<id>19</id>
 		<name>Staff</name>
 		<graphic>staff</graphic>
-		<value>10</value>
+		<type>3</type>
+		<value>5</value>
+		<gold>1</gold>
 	</weapon>
 </data>

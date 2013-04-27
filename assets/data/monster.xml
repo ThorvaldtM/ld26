@@ -4,27 +4,30 @@
 		<id>1</id>
 		<name>Goblin</name>
 		<graphic>goblin</graphic>
-		<hp>10</hp>
+		<hp>20</hp>
 		<sp>10</sp>
 		<atk>5</atk>
 		<def>1</def>
 		<skill>0</skill>
 		<defRatio>0</defRatio>
 		<skillRatio>0</skillRatio>
+		<gold>1</gold>
+		<xp>25</xp>
+		<level>1</level>
 		<loots>
 			<loot>
 				<type>1</type>
-				<id>1</id>
+				<id>18</id>
 				<ratio>0.5</ratio>
 			</loot>
 			<loot>
 				<type>2</type>
-				<id>1</id>
+				<id>2</id>
 				<ratio>0.5</ratio>
 			</loot>
 			<loot>
 				<type>3</type>
-				<id>1</id>
+				<id>2</id>
 				<ratio>0.5</ratio>
 			</loot>
 		</loots>
@@ -33,13 +36,16 @@
 		<id>2</id>
 		<name>Orc</name>
 		<graphic>orc</graphic>
-		<hp>15</hp>
+		<hp>40</hp>
 		<sp>10</sp>
 		<atk>30</atk>
 		<def>1</def>
 		<skill>0</skill>
 		<defRatio>0</defRatio>
 		<skillRatio>0</skillRatio>
+		<gold>1</gold>
+		<xp>52</xp>
+		<level>3</level>
 		<loots>
 			<loot>
 				<type>1</type>
@@ -62,13 +68,16 @@
 		<id>3</id>
 		<name>Skeleton</name>
 		<graphic>skeleton</graphic>
-		<hp>30</hp>
+		<hp>50</hp>
 		<sp>10</sp>
 		<atk>20</atk>
 		<def>2</def>
 		<skill>0</skill>
 		<defRatio>0.5</defRatio>
 		<skillRatio>0</skillRatio>
+		<gold>1</gold>
+		<xp>64</xp>
+		<level>8</level>
 		<loots>
 			<loot>
 				<type>1</type>
@@ -98,6 +107,41 @@
 		<skill>0</skill>
 		<defRatio>0</defRatio>
 		<skillRatio>0</skillRatio>
+		<gold>1</gold>
+		<xp>1000</xp>
+		<level>10</level>
+		<loots>
+			<loot>
+				<type>1</type>
+				<id>1</id>
+				<ratio>0.1</ratio>
+			</loot>
+			<loot>
+				<type>2</type>
+				<id>1</id>
+				<ratio>0.1</ratio>
+			</loot>
+			<loot>
+				<type>3</type>
+				<id>1</id>
+				<ratio>0.1</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>4</id>
+		<name>Narz</name>
+		<graphic>narz</graphic>
+		<hp>1000</hp>
+		<sp>100</sp>
+		<atk>1000</atk>
+		<def>999</def>
+		<skill>0</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0</skillRatio>
+		<gold>1</gold>
+		<xp>10000</xp>
+		<level>50</level>
 		<loots>
 			<loot>
 				<type>1</type>

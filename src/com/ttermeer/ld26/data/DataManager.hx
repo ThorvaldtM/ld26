@@ -32,11 +32,22 @@ class DataManager
 		for ( _hero in _fast.nodes.hero) {
 			var _heroData:DHero = new DHero();
 			_heroData.id = Std.parseInt(_hero.node.id.innerData);
+			_heroData.hp = Std.parseInt(_hero.node.hp.innerData);
+			_heroData.sp = Std.parseInt(_hero.node.sp.innerData);
 			_heroData.name = _hero.node.name.innerData;
 			_heroData.graphic = _hero.node.graphic.innerData;
 			_heroData.defaultWeapon = Std.parseInt(_hero.node.defaults.node.weapon.innerData);
 			_heroData.defaultArmor = Std.parseInt(_hero.node.defaults.node.armor.innerData);
 			_heroData.defaultSkill = Std.parseInt(_hero.node.defaults.node.skill.innerData);
+			for ( _value in _hero.node.weapons.nodes.weapon) {
+				_heroData.weapons.push(Std.parseInt(_value.innerData));
+			}
+			for ( _value in _hero.node.armors.nodes.armor) {
+				_heroData.armors.push(Std.parseInt(_value.innerData));
+			}
+			for ( _value in _hero.node.skills.nodes.skill) {
+				_heroData.skills.push(Std.parseInt(_value.innerData));
+			}
 			_heroList.push(_heroData);
 		}
 	}
@@ -52,6 +63,8 @@ class DataManager
 			_weaponData.name = _weapon.node.name.innerData;
 			_weaponData.graphic = _weapon.node.graphic.innerData;
 			_weaponData.value = Std.parseInt(_weapon.node.value.innerData);
+			_weaponData.gold = Std.parseInt(_weapon.node.gold.innerData);
+			_weaponData.type = Std.parseInt(_weapon.node.type.innerData);
 			_weaponList.push(_weaponData);
 		}
 	}
@@ -67,6 +80,8 @@ class DataManager
 			_armorData.name = _armor.node.name.innerData;
 			_armorData.graphic = _armor.node.graphic.innerData;
 			_armorData.value = Std.parseInt(_armor.node.value.innerData);
+			_armorData.gold = Std.parseInt(_armor.node.gold.innerData);
+			_armorData.type = Std.parseInt(_armor.node.type.innerData);
 			_armorList.push(_armorData);
 		}
 	}
@@ -81,7 +96,10 @@ class DataManager
 			_skillData.id = Std.parseInt(_skill.node.id.innerData);
 			_skillData.name = _skill.node.name.innerData;
 			_skillData.graphic = _skill.node.graphic.innerData;
+			_skillData.fx = _skill.node.fx.innerData;
 			_skillData.sp = Std.parseInt(_skill.node.sp.innerData);
+			_skillData.gold = Std.parseInt(_skill.node.gold.innerData);
+			_skillData.type = Std.parseInt(_skill.node.type.innerData);
 			_skillList.push(_skillData);
 		}
 	}
@@ -101,6 +119,9 @@ class DataManager
 			_monsterData.atk = Std.parseInt(_monster.node.atk.innerData);
 			_monsterData.def = Std.parseInt(_monster.node.def.innerData);
 			_monsterData.skill = Std.parseInt(_monster.node.skill.innerData);
+			_monsterData.gold = Std.parseInt(_monster.node.gold.innerData);
+			_monsterData.xp = Std.parseInt(_monster.node.xp.innerData);
+			_monsterData.level = Std.parseInt(_monster.node.level.innerData);
 			_monsterData.defRatio = Std.parseFloat(_monster.node.defRatio.innerData);
 			_monsterData.skillRatio = Std.parseFloat(_monster.node.skillRatio.innerData);
 			for ( _loot in _monster.node.loots.nodes.loot) {

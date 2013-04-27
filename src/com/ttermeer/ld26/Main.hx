@@ -2,6 +2,7 @@ package com.ttermeer.ld26;
 
 import com.ttermeer.ld26.data.DataManager;
 import com.ttermeer.ld26.interfaces.Game;
+import com.ttermeer.ld26.interfaces.HeroSelect;
 import nme.display.Sprite;
 import nme.events.Event;
 import nme.Lib;
@@ -14,6 +15,8 @@ import nme.Lib;
 class Main extends Sprite 
 {
 	var inited:Bool;
+	var _heroSelect:HeroSelect;
+	var _game:Game;
 
 	/* ENTRY POINT */
 	
@@ -34,10 +37,31 @@ class Main extends Sprite
 		// stage.stageWidth x stage.stageHeight @ stage.dpiScale
 		
 		// Assets:
-		// nme.Assets.getBitmapData("img/assetname.jpg");
+		// nme.Assets.getBitmapData("img/assetname.jpg");;
 		
-		var _game:Game = new Game(DataManager.instance.heroList[0]);
+		startSelect();
+	}
+	
+	private function startSelect(?e:Event) {
+		if (_game != null) {
+			removeChild(_game);
+			_game = null;
+		}
+		
+		_heroSelect = new HeroSelect();
+		_heroSelect.addEventListener('game', startGame);
+		addChild(_heroSelect);
+	}
+
+	
+	private function startGame(e:Event):Void 
+	{			
+		removeChild(_heroSelect);
+		_game = new Game(DataManager.instance.heroList[_heroSelect.index]);
+		_heroSelect = null;
+		_game.addEventListener('restart', startSelect);
 		addChild(_game);
+	
 	}
 
 	/* SETUP */

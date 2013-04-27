@@ -4,24 +4,36 @@
 		<id>1</id>
 		<name>Mighty Blow</name>
 		<sp>2</sp>
-		<graphic>mightyblow</graphic>
+		<graphic>skill</graphic>
+		<fx>fx_mightyblow</fx>
+		<type>1</type>
+		<gold>1</gold>
 	</skill>
 	<skill>
 		<id>2</id>
 		<name>Deadly Shot</name>
 		<sp>2</sp>
-		<graphic>deadlyshot</graphic>
+		<graphic>skill</graphic>
+		<fx>fx_deadlyshot</fx>
+		<type>1</type>
+		<gold>1</gold>
 	</skill>
 	<skill>
 		<id>3</id>
 		<name>Fireball</name>
 		<sp>3</sp>
-		<graphic>fireball</graphic>
+		<graphic>skill</graphic>
+		<fx>fx_fireball</fx>
+		<type>1</type>
+		<gold>1</gold>
 	</skill>
 	<skill>
 		<id>4</id>
 		<name>Heal</name>
 		<sp>5</sp>
-		<graphic>heal</graphic>
+		<graphic>skill</graphic>
+		<fx>fx_heal</fx>
+		<type>2</type>
+		<gold>1</gold>
 	</skill>
 </data>

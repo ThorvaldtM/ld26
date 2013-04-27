@@ -17,6 +17,9 @@ class DMonster
 	public var defRatio:Float;
 	public var skillRatio:Float;
 	public var loots:Array<DLoot>;
+	public var gold:Int;
+	public var xp:Int;
+	public var level:Int;
 
 
 	public function new() 

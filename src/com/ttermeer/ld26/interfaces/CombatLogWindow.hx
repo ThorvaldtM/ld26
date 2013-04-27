@@ -15,11 +15,13 @@ class CombatLogWindow extends Sprite
 	static public var ATTACK:String = "attack";
 	static public var DEFEND:String = "defend";
 	static public var SKILL:String = "skill";
+	static public var FLEE:String = "flee";
 	
 	var _attackBtn:SimpleButton;
 	var _defendBtn:SimpleButton;
 	var _skillBtn:SimpleButton;
 	var _log:TextField;
+	var _fleeBtn:SimpleButton;
 
 	public function new() 
 	{
@@ -31,11 +33,15 @@ class CombatLogWindow extends Sprite
 		_defendBtn = new SimpleButton(AssetLoader.loadGraphic('btn_defend_up', 80, 30), AssetLoader.loadGraphic('btn_defend_over', 80, 30), AssetLoader.loadGraphic('btn_defend_down', 80, 30), AssetLoader.loadGraphic('btn_defend_down', 80, 30));
 		_defendBtn.x = 80;
 		_defendBtn.addEventListener(MouseEvent.CLICK, dispatchDefend);
-		addChild(_defendBtn);
+		//addChild(_defendBtn);
 		_skillBtn = new SimpleButton(AssetLoader.loadGraphic('btn_skill_up', 80, 30), AssetLoader.loadGraphic('btn_skill_over', 80, 30), AssetLoader.loadGraphic('btn_skill_down', 80, 30), AssetLoader.loadGraphic('btn_skill_down', 80, 30));
-		_skillBtn.x = 160;
+		_skillBtn.x = 80;
 		_skillBtn.addEventListener(MouseEvent.CLICK, dispatchSkill);
 		addChild(_skillBtn);
+		_fleeBtn = new SimpleButton(AssetLoader.loadGraphic('btn_flee_up', 80, 30), AssetLoader.loadGraphic('btn_flee_over', 80, 30), AssetLoader.loadGraphic('btn_flee_down', 80, 30), AssetLoader.loadGraphic('btn_flee_down', 80, 30));
+		_fleeBtn.x = 160;
+		_fleeBtn.addEventListener(MouseEvent.CLICK, dispatchFlee);
+		addChild(_fleeBtn);
 		
 		_log = new TextField();
 		_log.width = 240;
@@ -52,6 +58,7 @@ class CombatLogWindow extends Sprite
 		_attackBtn.enabled = false;
 		_defendBtn.enabled = false;
 		_skillBtn.enabled = false;
+		_fleeBtn.enabled = false;
 	}
 	
 	public function newEncounter(name:String) {
@@ -63,6 +70,7 @@ class CombatLogWindow extends Sprite
 		_attackBtn.enabled = true;
 		_defendBtn.enabled = true;
 		_skillBtn.enabled = true;
+		_fleeBtn.enabled = true;
 	}
 	
 	public function miss(?name:String = "") {
@@ -71,26 +79,44 @@ class CombatLogWindow extends Sprite
 			_attackBtn.enabled = false;
 			_defendBtn.enabled = false;
 			_skillBtn.enabled = false;
+			_fleeBtn.enabled = false;
 		}else {
 			updateText(name + " missed");
 		}
 	}
 	
-	public function attack(dmg:Int, crit:Bool, ?name:String = "") {
+	public function attack(dmg:Int, crit:Bool, ?name:String = "", ?skill:String = "") {
 		if(name == ""){
 			if (crit) {
-				updateText("You critical hit for " + dmg + " !");
+				if (skill != "") {
+					updateText("You cast " + skill + " and critical hit for " + dmg + " !");
+				}else{
+					updateText("You critical hit for " + dmg + " !");
+				}
 			}else{
-				updateText("You hit for " + dmg);
+				if (skill != "") {
+					updateText("You cast " + skill + " and hit for " + dmg + " !");
+				}else{
+					updateText("You hit for " + dmg);
+				}
 			}
 			_attackBtn.enabled = false;
 			_defendBtn.enabled = false;
 			_skillBtn.enabled = false;
+			_fleeBtn.enabled = false;
 		}else {			
 			if (crit) {
-				updateText(name + " critical hit for " + dmg + " !");
+				if (skill != "") {
+					updateText(name + " cast " + skill + " and critical hit for " + dmg + " !");
+				}else{
+					updateText(name + " critical hit for " + dmg + " !");
+				}
 			}else{
-				updateText(name + " hit for " + dmg);
+				if (skill != "") {
+					updateText(name + " cast " + skill + " and hit for " + dmg + " !");
+				}else{
+					updateText(name + " hit for " + dmg);
+				}
 			}
 		}
 	}
@@ -101,8 +127,20 @@ class CombatLogWindow extends Sprite
 			_attackBtn.enabled = false;
 			_defendBtn.enabled = false;
 			_skillBtn.enabled = false;
+			_fleeBtn.enabled = false;
 		}else {
 			updateText(name + " is stunned.");
+		}
+	}
+	
+	public function flee(success:Bool) {
+		_attackBtn.enabled = false;
+		_defendBtn.enabled = false;
+		_skillBtn.enabled = false;
+		if (success) {
+			updateText('You escaped successfully.');
+		}else {
+			updateText('You failed to escape.');
 		}
 	}
 	
@@ -120,16 +158,18 @@ class CombatLogWindow extends Sprite
 			_attackBtn.enabled = false;
 			_defendBtn.enabled = false;
 			_skillBtn.enabled = false;
+			_fleeBtn.enabled = false;
 		}else {
 			updateText(name + " defend.");
 		}
 	}
 	
-	public function victory() {
-		updateText("Victory !");
+	public function victory(xp:Int) {
+		updateText("Victory ! You gained " + xp + " experience point(s).");
 		_attackBtn.enabled = false;
 		_defendBtn.enabled = false;
 		_skillBtn.enabled = false;
+		_fleeBtn.enabled = false;
 	}
 	
 	public function dead() {
@@ -168,6 +208,13 @@ class CombatLogWindow extends Sprite
 	{
 		if(_skillBtn.enabled){
 			dispatchEvent(new Event(SKILL));
+		}
+	}
+	
+	private function dispatchFlee(e:MouseEvent):Void 
+	{
+		if(_fleeBtn.enabled){
+			dispatchEvent(new Event(FLEE));
 		}
 	}
 	

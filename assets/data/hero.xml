@@ -3,10 +3,20 @@
 	<hero>
 		<id>1</id>
 		<name>Warrior</name>
+		<hp>100</hp>
+		<sp>5</sp>
 		<weapons>
 			<weapon>1</weapon>
-			<weapon>3</weapon>
+			<weapon>2</weapon>
 		</weapons>
+		<armors>
+			<armor>1</armor>
+			<armor>2</armor>
+			<armor>3</armor>
+		</armors>
+		<skills>
+			<skill>1</skill>
+		</skills>
 		<graphic>warrior</graphic>
 		<defaults>
 			<weapon>1</weapon>
@@ -17,12 +27,22 @@
 	<hero>
 		<id>2</id>
 		<name>Mage</name>
+		<hp>60</hp>
+		<sp>10</sp>
 		<weapons>
-			<weapon>2</weapon>
+			<weapon>3</weapon>
 		</weapons>
+		<armors>
+			<armor>1</armor>
+		</armors>
+		<skills>
+			<skill>1</skill>
+			<skill>2</skill>
+			<skill>3</skill>
+		</skills>
 		<graphic>mage</graphic>
 		<defaults>
-			<weapon>4</weapon>
+			<weapon>19</weapon>
 			<armor>1</armor>
 			<skill>3</skill>
 		</defaults>
@@ -30,12 +50,23 @@
 	<hero>
 		<id>3</id>
 		<name>Archer</name>
+		<hp>80</hp>
+		<sp>8</sp>
 		<weapons>
-			<weapon>3</weapon>
+			<weapon>1</weapon>
+			<weapon>2</weapon>
 		</weapons>
+		<armors>
+			<armor>1</armor>
+			<armor>2</armor>
+		</armors>
+		<skills>
+			<skill>1</skill>
+			<skill>2</skill>
+		</skills>
 		<graphic>archer</graphic>
 		<defaults>
-			<weapon>3</weapon>
+			<weapon>16</weapon>
 			<armor>1</armor>
 			<skill>2</skill>
 		</defaults>

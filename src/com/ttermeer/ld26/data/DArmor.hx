@@ -10,6 +10,8 @@ class DArmor
 	public var name:String;
 	public var graphic:String;
 	public var value:Int;
+	public var type:Int;
+	public var gold:Int;
 
 	public function new() 
 	{

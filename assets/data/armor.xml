@@ -5,17 +5,23 @@
 		<name>Cloth</name>
 		<value>1</value>
 		<graphic>cloth</graphic>
+		<type>1</type>
+		<gold>1</gold>
 	</armor>
 	<armor>
 		<id>2</id>
 		<name>Leather</name>
 		<value>5</value>
 		<graphic>leather</graphic>
+		<type>2</type>
+		<gold>1</gold>
 	</armor>
 	<armor>		
 		<id>3</id>
 		<name>Plate</name>
 		<value>10</value>
 		<graphic>plate</graphic>
+		<type>3</type>
+		<gold>1</gold>
 	</armor>
 </data>
