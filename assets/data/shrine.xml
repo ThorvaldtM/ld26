@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<shrine>
+		<id>1</id>
+		<name>Ruined Shrine</name>
+		<graphic>shrine</graphic>
+	</shrine>
+	<shrine>
+		<id>2</id>
+		<name>Old Shrine</name>
+		<graphic>shrine</graphic>
+	</shrine>
+	<shrine>
+		<id>3</id>
+		<name>Dark Shrine</name>
+		<graphic>shrine</graphic>
+	</shrine>
+	<shrine>
+		<id>4</id>
+		<name>Mysterious Shrine</name>
+		<graphic>shrine</graphic>
+	</shrine>
+	<shrine>
+		<id>5</id>
+		<name>Glowing Shrine</name>
+		<graphic>shrine</graphic>
+	</shrine>
+	<shrine>
+		<id>6</id>
+		<name>Shrine of the Bear</name>
+		<graphic>shrine</graphic>
+	</shrine>
+	<shrine>
+		<id>7</id>
+		<name>Shrine of the Owl</name>
+		<graphic>shrine</graphic>
+	</shrine>
+	<shrine>
+		<id>8</id>
+		<name>Wealth Shrine</name>
+		<graphic>shrine</graphic>
+	</shrine>
+</data>
