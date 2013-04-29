@@ -39,6 +39,19 @@ class ItemPopup extends Sprite
 		
 		var _font:Font = Assets.getFont('fonts/vgafix.ttf');
 		
+		var _title:TextField = new TextField();
+		_title.defaultTextFormat = new TextFormat(_font.fontName, 12);
+		_title.textColor = 0xFFFFFF;
+		_title.embedFonts = true;
+		_title.text = "Victory !";
+		_title.selectable = false;
+		_title.width = 240;
+		_title.height = 30;
+		_title.antiAliasType = AntiAliasType.ADVANCED;
+		_title.autoSize = TextFieldAutoSize.CENTER;
+		_title.y = 5;
+		addChild(_title);
+		
 		_loot = loot;
 		//fetch item info
 		var _name:String = "";

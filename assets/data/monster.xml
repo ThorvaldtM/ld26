@@ -2,160 +2,392 @@
 <data>
 	<monster>
 		<id>1</id>
-		<name>Goblin</name>
-		<graphic>goblin</graphic>
-		<hp>20</hp>
+		<name>Imp</name>
+		<graphic>monster_sm</graphic>
+		<hp>12</hp>
 		<sp>10</sp>
 		<atk>5</atk>
-		<def>1</def>
-		<skill>0</skill>
+		<def>0</def>
+		<skill>14</skill>
 		<defRatio>0</defRatio>
-		<skillRatio>0</skillRatio>
+		<skillRatio>0.3</skillRatio>
 		<gold>1</gold>
 		<xp>25</xp>
 		<level>1</level>
+		<rarity>1</rarity>
 		<loots>
 			<loot>
-				<type>1</type>
-				<id>18</id>
-				<ratio>0.5</ratio>
-			</loot>
-			<loot>
-				<type>2</type>
-				<id>2</id>
-				<ratio>0.5</ratio>
-			</loot>
-			<loot>
 				<type>3</type>
-				<id>2</id>
-				<ratio>0.5</ratio>
+				<id>14</id>
+				<ratio>0.05</ratio>
 			</loot>
 		</loots>
 	</monster>
 	<monster>
 		<id>2</id>
-		<name>Orc</name>
-		<graphic>orc</graphic>
-		<hp>40</hp>
+		<name>Goblin</name>
+		<graphic>monster_sm</graphic>
+		<hp>20</hp>
 		<sp>10</sp>
-		<atk>30</atk>
+		<atk>8</atk>
 		<def>1</def>
-		<skill>0</skill>
+		<skill>2</skill>
 		<defRatio>0</defRatio>
-		<skillRatio>0</skillRatio>
-		<gold>1</gold>
-		<xp>52</xp>
-		<level>3</level>
+		<skillRatio>0.1</skillRatio>
+		<gold>2</gold>
+		<xp>40</xp>
+		<level>2</level>
+		<rarity>1</rarity>
 		<loots>
 			<loot>
 				<type>1</type>
-				<id>1</id>
-				<ratio>0.1</ratio>
+				<id>17</id>
+				<ratio>0.2</ratio>
 			</loot>
 			<loot>
-				<type>2</type>
-				<id>1</id>
-				<ratio>0.1</ratio>
+				<type>1</type>
+				<id>2</id>
+				<ratio>0.05</ratio>
 			</loot>
 			<loot>
 				<type>3</type>
-				<id>1</id>
-				<ratio>0.1</ratio>
+				<id>2</id>
+				<ratio>0.05</ratio>
 			</loot>
 		</loots>
 	</monster>
 	<monster>
 		<id>3</id>
-		<name>Skeleton</name>
-		<graphic>skeleton</graphic>
+		<name>Giant Bat</name>
+		<graphic>monster_sm</graphic>
+		<hp>15</hp>
+		<sp>10</sp>
+		<atk>15</atk>
+		<def>4</def>
+		<skill>4</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.3</skillRatio>
+		<gold>1</gold>
+		<xp>60</xp>
+		<level>3</level>
+		<rarity>1</rarity>
+		<loots>
+			<loot>
+				<type>2</type>
+				<id>2</id>
+				<ratio>0.05</ratio>
+			</loot>
+			<loot>
+				<type>3</type>
+				<id>4</id>
+				<ratio>0.05</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>4</id>
+		<name>Red Imp</name>
+		<graphic>monster_sm</graphic>
+		<hp>30</hp>
+		<sp>10</sp>
+		<atk>30</atk>
+		<def>5</def>
+		<skill>14</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.3</skillRatio>
+		<gold>5</gold>
+		<xp>85</xp>
+		<level>5</level>
+		<rarity>1</rarity>
+		<loots>
+			<loot>
+				<type>2</type>
+				<id>2</id>
+				<ratio>0.2</ratio>
+			</loot>
+			<loot>
+				<type>1</type>
+				<id>2</id>
+				<ratio>0.1</ratio>
+			</loot>
+			<loot>
+				<type>3</type>
+				<id>14</id>
+				<ratio>0.1</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>5</id>
+		<name>Orc</name>
+		<graphic>monster</graphic>
 		<hp>50</hp>
 		<sp>10</sp>
-		<atk>20</atk>
-		<def>2</def>
-		<skill>0</skill>
-		<defRatio>0.5</defRatio>
-		<skillRatio>0</skillRatio>
-		<gold>1</gold>
-		<xp>64</xp>
-		<level>8</level>
+		<atk>40</atk>
+		<def>5</def>
+		<skill>1</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.1</skillRatio>
+		<gold>10</gold>
+		<xp>130</xp>
+		<level>6</level>
+		<rarity>2</rarity>
 		<loots>
 			<loot>
 				<type>1</type>
-				<id>1</id>
+				<id>19</id>
 				<ratio>0.1</ratio>
 			</loot>
 			<loot>
-				<type>2</type>
-				<id>1</id>
-				<ratio>0.1</ratio>
+				<type>1</type>
+				<id>11</id>
+				<ratio>0.05</ratio>
 			</loot>
 			<loot>
 				<type>3</type>
 				<id>1</id>
-				<ratio>0.1</ratio>
+				<ratio>0.05</ratio>
 			</loot>
 		</loots>
 	</monster>
 	<monster>
-		<id>4</id>
-		<name>Evil Mage</name>
-		<graphic>evilmage</graphic>
+		<id>5</id>
+		<name>The Black Goblin</name>
+		<graphic>monster</graphic>
+		<hp>200</hp>
+		<sp>50</sp>
+		<atk>35</atk>
+		<def>3</def>
+		<skill>3</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.6</skillRatio>
+		<gold>100</gold>
+		<xp>500</xp>
+		<level>7</level>
+		<rarity>9</rarity>
+		<loots>
+			<loot>
+				<type>1</type>
+				<id>12</id>
+				<ratio>0.1</ratio>
+			</loot>
+			<loot>
+				<type>3</type>
+				<id>3</id>
+				<ratio>0.4</ratio>
+			</loot>
+			<loot>
+				<type>2</type>
+				<id>4</id>
+				<ratio>0.4</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>6</id>
+		<name>Goblin Thrower</name>
+		<graphic>monster_sm</graphic>
+		<hp>70</hp>
+		<sp>10</sp>
+		<atk>60</atk>
+		<def>5</def>
+		<skill>7</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.1</skillRatio>
+		<gold>12</gold>
+		<xp>150</xp>
+		<level>8</level>
+		<rarity>1</rarity>
+		<loots>
+			<loot>
+				<type>3</type>
+				<id>7</id>
+				<ratio>0.05</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>7</id>
+		<name>Skeleton</name>
+		<graphic>monster</graphic>
+		<hp>80</hp>
+		<sp>10</sp>
+		<atk>60</atk>
+		<def>10</def>
+		<skill>0</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0</skillRatio>
+		<gold>10</gold>
+		<xp>175</xp>
+		<level>9</level>
+		<rarity>2</rarity>
+		<loots>
+			<loot>
+				<type>2</type>
+				<id>3</id>
+				<ratio>0.05</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>8</id>
+		<name>Orc Warrior</name>
+		<graphic>monster</graphic>
 		<hp>100</hp>
 		<sp>10</sp>
-		<atk>100</atk>
-		<def>1</def>
-		<skill>0</skill>
+		<atk>60</atk>
+		<def>13</def>
+		<skill>13</skill>
 		<defRatio>0</defRatio>
-		<skillRatio>0</skillRatio>
-		<gold>1</gold>
-		<xp>1000</xp>
+		<skillRatio>0.1</skillRatio>
+		<gold>15</gold>
+		<xp>230</xp>
 		<level>10</level>
+		<rarity>3</rarity>
 		<loots>
 			<loot>
 				<type>1</type>
-				<id>1</id>
+				<id>20</id>
 				<ratio>0.1</ratio>
 			</loot>
 			<loot>
-				<type>2</type>
-				<id>1</id>
-				<ratio>0.1</ratio>
+				<type>1</type>
+				<id>27</id>
+				<ratio>0.05</ratio>
 			</loot>
 			<loot>
 				<type>3</type>
-				<id>1</id>
-				<ratio>0.1</ratio>
+				<id>13</id>
+				<ratio>0.005</ratio>
 			</loot>
 		</loots>
 	</monster>
 	<monster>
-		<id>4</id>
-		<name>Narz</name>
-		<graphic>narz</graphic>
-		<hp>1000</hp>
-		<sp>100</sp>
-		<atk>1000</atk>
-		<def>999</def>
-		<skill>0</skill>
+		<id>9</id>
+		<name>Goblin Shaman</name>
+		<graphic>monster_sm</graphic>
+		<hp>100</hp>
+		<sp>20</sp>
+		<atk>70</atk>
+		<def>5</def>
+		<skill>9</skill>
 		<defRatio>0</defRatio>
-		<skillRatio>0</skillRatio>
-		<gold>1</gold>
-		<xp>10000</xp>
-		<level>50</level>
+		<skillRatio>0.1</skillRatio>
+		<gold>12</gold>
+		<xp>270</xp>
+		<level>13</level>
+		<rarity>1</rarity>
+		<loots>
+			<loot>
+				<type>3</type>
+				<id>9</id>
+				<ratio>0.05</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>10</id>
+		<name>Skeleton Archer</name>
+		<graphic>monster</graphic>
+		<hp>120</hp>
+		<sp>10</sp>
+		<atk>80</atk>
+		<def>5</def>
+		<skill>2</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.1</skillRatio>
+		<gold>10</gold>
+		<xp>280</xp>
+		<level>14</level>
+		<rarity>2</rarity>
+		<loots>
+			<loot>
+				<type>3</type>
+				<id>2</id>
+				<ratio>0.05</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>11</id>
+		<name>Orc Guard</name>
+		<graphic>monster</graphic>
+		<hp>150</hp>
+		<sp>10</sp>
+		<atk>100</atk>
+		<def>10</def>
+		<skill>13</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.1</skillRatio>
+		<gold>15</gold>
+		<xp>300</xp>
+		<level>15</level>
+		<rarity>3</rarity>
 		<loots>
 			<loot>
 				<type>1</type>
-				<id>1</id>
-				<ratio>0.1</ratio>
-			</loot>
-			<loot>
-				<type>2</type>
-				<id>1</id>
+				<id>4</id>
 				<ratio>0.1</ratio>
 			</loot>
 			<loot>
 				<type>3</type>
-				<id>1</id>
+				<id>13</id>
+				<ratio>0.05</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>12</id>
+		<name>Mummy</name>
+		<graphic>monster</graphic>
+		<hp>120</hp>
+		<sp>10</sp>
+		<atk>90</atk>
+		<def>15</def>
+		<skill>0</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0</skillRatio>
+		<gold>15</gold>
+		<xp>310</xp>
+		<level>16</level>
+		<rarity>2</rarity>
+		<loots>
+			<loot>
+				<type>1</type>
+				<id>27</id>
+				<ratio>0.2</ratio>
+			</loot>
+		</loots>
+	</monster>
+	<monster>
+		<id>13</id>
+		<name>The Skeleton King</name>
+		<graphic>monster</graphic>
+		<hp>200</hp>
+		<sp>20</sp>
+		<atk>35</atk>
+		<def>3</def>
+		<skill>1</skill>
+		<defRatio>0</defRatio>
+		<skillRatio>0.2</skillRatio>
+		<gold>100</gold>
+		<xp>1000</xp>
+		<level>17</level>
+		<rarity>9</rarity>
+		<loots>
+			<loot>
+				<type>2</type>
+				<id>8</id>
+				<ratio>0.3</ratio>
+			</loot>
+			<loot>
+				<type>1</type>
+				<id>22</id>
+				<ratio>0.4</ratio>
+			</loot>
+			<loot>
+				<type>1</type>
+				<id>6</id>
 				<ratio>0.1</ratio>
 			</loot>
 		</loots>

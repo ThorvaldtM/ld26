@@ -5,18 +5,20 @@
 		<name>Mighty Blow</name>
 		<sp>2</sp>
 		<graphic>skill</graphic>
-		<fx>fx_mightyblow</fx>
+		<fx></fx>
+		<sound></sound>
 		<type>1</type>
-		<gold>1</gold>
+		<gold>5</gold>
 	</skill>
 	<skill>
 		<id>2</id>
-		<name>Deadly Shot</name>
+		<name>Aimed Shot</name>
 		<sp>2</sp>
 		<graphic>skill</graphic>
-		<fx>fx_deadlyshot</fx>
+		<fx></fx>
+		<sound></sound>
 		<type>1</type>
-		<gold>1</gold>
+		<gold>5</gold>
 	</skill>
 	<skill>
 		<id>3</id>
@@ -24,16 +26,98 @@
 		<sp>3</sp>
 		<graphic>skill</graphic>
 		<fx>fx_fireball</fx>
+		<sound>fireball</sound>
 		<type>1</type>
-		<gold>1</gold>
+		<gold>5</gold>
 	</skill>
 	<skill>
 		<id>4</id>
 		<name>Heal</name>
 		<sp>5</sp>
 		<graphic>skill</graphic>
-		<fx>fx_heal</fx>
+		<fx></fx>
+		<sound></sound>
 		<type>2</type>
-		<gold>1</gold>
+		<gold>20</gold>
+	</skill>
+	<skill>
+		<id>5</id>
+		<name>Fireball Ex</name>
+		<sp>6</sp>
+		<graphic>skill</graphic>
+		<fx>fx_fireball</fx>
+		<sound>fireball</sound>
+		<type>2</type>
+		<gold>70</gold>
+	</skill>
+	<skill>
+		<id>6</id>
+		<name>Apocalypse</name>
+		<sp>20</sp>
+		<graphic>skill</graphic>
+		<fx>fx_fireball</fx>
+		<sound>fireball</sound>
+		<type>3</type>
+		<gold>1000</gold>
+	</skill>
+	<skill>
+		<id>7</id>
+		<name>Head Shot</name>
+		<sp>2</sp>
+		<graphic>skill</graphic>
+		<fx></fx>
+		<sound></sound>
+		<type>1</type>
+		<gold>40</gold>
+	</skill>
+	<skill>
+		<id>9</id>
+		<name>Poison</name>
+		<sp>2</sp>
+		<graphic>skill</graphic>
+		<fx></fx>
+		<sound></sound>
+		<type>2</type>
+		<gold>45</gold>
+	</skill>
+	<skill>
+		<id>11</id>
+		<name>Death</name>
+		<sp>2</sp>
+		<graphic>skill</graphic>
+		<fx></fx>
+		<sound></sound>
+		<type>3</type>
+		<gold>70</gold>
+	</skill>
+	<skill>
+		<id>12</id>
+		<name>Greater Heal</name>
+		<sp>15</sp>
+		<graphic>skill</graphic>
+		<fx></fx>
+		<sound></sound>
+		<type>2</type>
+		<gold>80</gold>
+	</skill>
+	<skill>
+		<id>13</id>
+		<name>Merciless Strike</name>
+		<sp>6</sp>
+		<graphic>skill</graphic>
+		<fx></fx>
+		<sound></sound>
+		<type>1</type>
+		<gold>50</gold>
+	</skill>
+	<skill>
+		<id>14</id>
+		<name>Drain</name>
+		<sp>4</sp>
+		<graphic>skill</graphic>
+		<fx></fx>
+		<sound></sound>
+		<type>1</type>
+		<gold>30</gold>
 	</skill>
 </data>

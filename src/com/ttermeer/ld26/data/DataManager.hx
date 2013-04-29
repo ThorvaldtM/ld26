@@ -14,6 +14,7 @@ class DataManager
 	private var _armorList:Array<DArmor>;
 	private var _skillList:Array<DSkill>;
 	private var _monsterList:Array<DMonster>;
+	private var _shrineList:Array<DShrine>;
 
 	public function new() 
 	{
@@ -22,6 +23,7 @@ class DataManager
 		composeArmor();
 		composeSkill();
 		composeMonster();
+		composeShrine();
 	}
 	
 	function composeHero() 
@@ -96,7 +98,12 @@ class DataManager
 			_skillData.id = Std.parseInt(_skill.node.id.innerData);
 			_skillData.name = _skill.node.name.innerData;
 			_skillData.graphic = _skill.node.graphic.innerData;
-			_skillData.fx = _skill.node.fx.innerData;
+			if(_skill.node.fx.x.firstChild() != null ){
+				_skillData.fx = _skill.node.fx.innerData;
+			}
+			if(_skill.node.sound.x.firstChild() != null ){
+				_skillData.sound = _skill.node.sound.innerData;
+			}
 			_skillData.sp = Std.parseInt(_skill.node.sp.innerData);
 			_skillData.gold = Std.parseInt(_skill.node.gold.innerData);
 			_skillData.type = Std.parseInt(_skill.node.type.innerData);
@@ -122,6 +129,7 @@ class DataManager
 			_monsterData.gold = Std.parseInt(_monster.node.gold.innerData);
 			_monsterData.xp = Std.parseInt(_monster.node.xp.innerData);
 			_monsterData.level = Std.parseInt(_monster.node.level.innerData);
+			_monsterData.rarity = Std.parseInt(_monster.node.rarity.innerData);
 			_monsterData.defRatio = Std.parseFloat(_monster.node.defRatio.innerData);
 			_monsterData.skillRatio = Std.parseFloat(_monster.node.skillRatio.innerData);
 			for ( _loot in _monster.node.loots.nodes.loot) {
@@ -133,6 +141,20 @@ class DataManager
 			}
 			
 			_monsterList.push(_monsterData);
+		}
+	}
+	
+	function composeShrine() 
+	{
+		var _xml:Xml = Xml.parse(Assets.getText('data/shrine.xml'));
+		var _fast:Fast = new Fast(_xml.firstElement());
+		_shrineList = new Array<DShrine>();
+		for ( _shrine in _fast.nodes.shrine) {
+			var _shrineData:DShrine = new DShrine();
+			_shrineData.id = Std.parseInt(_shrine.node.id.innerData);
+			_shrineData.name = _shrine.node.name.innerData;
+			_shrineData.graphic = _shrine.node.graphic.innerData;
+			_shrineList.push(_shrineData);
 		}
 	}
 	
@@ -207,5 +229,12 @@ class DataManager
 	}
 	
 	public var monsterList(get_monsterList, null):Array<DMonster>;
+	
+	function get_shrineList():Array<DShrine> 
+	{
+		return _shrineList;
+	}
+	
+	public var shrineList(get_shrineList, null):Array<DShrine>;
 	
 }

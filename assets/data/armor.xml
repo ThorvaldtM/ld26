@@ -6,7 +6,7 @@
 		<value>1</value>
 		<graphic>cloth</graphic>
 		<type>1</type>
-		<gold>1</gold>
+		<gold>2</gold>
 	</armor>
 	<armor>
 		<id>2</id>
@@ -14,7 +14,7 @@
 		<value>5</value>
 		<graphic>leather</graphic>
 		<type>2</type>
-		<gold>1</gold>
+		<gold>5</gold>
 	</armor>
 	<armor>		
 		<id>3</id>
@@ -22,6 +22,54 @@
 		<value>10</value>
 		<graphic>plate</graphic>
 		<type>3</type>
-		<gold>1</gold>
+		<gold>30</gold>
+	</armor>
+	<armor>
+		<id>4</id>
+		<name>Robe</name>
+		<value>3</value>
+		<graphic>cloth</graphic>
+		<type>1</type>
+		<gold>5</gold>
+	</armor>
+	<armor>
+		<id>5</id>
+		<name>Studded Armor</name>
+		<value>8</value>
+		<graphic>leather</graphic>
+		<type>2</type>
+		<gold>40</gold>
+	</armor>
+	<armor>		
+		<id>6</id>
+		<name>Fullplate</name>
+		<value>14</value>
+		<graphic>plate</graphic>
+		<type>3</type>
+		<gold>60</gold>
+	</armor>
+	<armor>
+		<id>7</id>
+		<name>Robe +2</name>
+		<value>5</value>
+		<graphic>cloth</graphic>
+		<type>1</type>
+		<gold>50</gold>
+	</armor>
+	<armor>
+		<id>8</id>
+		<name>Studded Armor +2</name>
+		<value>11</value>
+		<graphic>leather</graphic>
+		<type>2</type>
+		<gold>200</gold>
+	</armor>
+	<armor>		
+		<id>9</id>
+		<name>Fullplate +1</name>
+		<value>16</value>
+		<graphic>plate</graphic>
+		<type>3</type>
+		<gold>500</gold>
 	</armor>
 </data>

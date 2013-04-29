@@ -20,6 +20,8 @@ class DMonster
 	public var gold:Int;
 	public var xp:Int;
 	public var level:Int;
+	public var immunity:Int;
+	public var rarity:Int;
 
 
 	public function new() 

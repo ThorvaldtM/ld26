@@ -1,4 +1,5 @@
 package com.ttermeer.ld26.interfaces;
+import com.ttermeer.ld26.system.MusicManager;
 import com.ttermeer.ld26.tools.AssetLoader;
 import nme.Assets;
 import nme.display.SimpleButton;
@@ -43,6 +44,8 @@ class GameOver extends Sprite
 		_restart.y = 125;
 		_restart.x = 80;
 		addChild(_restart);
+		
+		MusicManager.instance.stop();
 	}
 	
 	private function dispatchRestart(e:MouseEvent):Void 

@@ -22,6 +22,7 @@
 	<assets path="assets/img" rename="img" />
 	<assets path="assets/data" rename="data" />
 	<assets path="assets/fonts" rename="fonts" />
+	<assets path="assets/sound" rename="sound" />
 	
 	<!-- optimize output -->
 	<haxeflag name="--dead-code-elimination" unless="haxe3" />

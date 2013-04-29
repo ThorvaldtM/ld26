@@ -6,7 +6,7 @@
 		<graphic>sword</graphic>
 		<type>1</type>
 		<value>10</value>
-		<gold>1</gold>
+		<gold>2</gold>
 	</weapon>
 	<weapon>
 		<id>2</id>
@@ -14,7 +14,7 @@
 		<graphic>sword</graphic>
 		<type>1</type>
 		<value>15</value>
-		<gold>1</gold>
+		<gold>5</gold>
 	</weapon>
 	<weapon>
 		<id>3</id>
@@ -22,55 +22,55 @@
 		<graphic>sword</graphic>
 		<type>1</type>
 		<value>20</value>
-		<gold>1</gold>
+		<gold>10</gold>
 	</weapon>
 	<weapon>
 		<id>4</id>
 		<name>Silver Sword</name>
 		<graphic>sword</graphic>
 		<type>1</type>
-		<value>10</value>
-		<gold>1</gold>
+		<value>40</value>
+		<gold>50</gold>
 	</weapon>
 	<weapon>
 		<id>6</id>
 		<name>Silver Sword +1</name>
 		<graphic>sword</graphic>
 		<type>1</type>
-		<value>15</value>
-		<gold>1</gold>
+		<value>60</value>
+		<gold>70</gold>
 	</weapon>
 	<weapon>
 		<id>7</id>
 		<name>Silver Sword +5</name>
 		<graphic>sword</graphic>
 		<type>1</type>
-		<value>20</value>
-		<gold>1</gold>
+		<value>100</value>
+		<gold>150</gold>
 	</weapon>
 	<weapon>
 		<id>8</id>
 		<name>Gold Sword</name>
 		<graphic>sword</graphic>
 		<type>1</type>
-		<value>10</value>
-		<gold>1</gold>
+		<value>50</value>
+		<gold>100</gold>
 	</weapon>
 	<weapon>
 		<id>9</id>
 		<name>Gold Sword +2</name>
 		<graphic>sword</graphic>
 		<type>1</type>
-		<value>15</value>
-		<gold>1</gold>
+		<value>80</value>
+		<gold>120</gold>
 	</weapon>
 	<weapon>
 		<id>10</id>
 		<name>Gold Sword +8</name>
 		<graphic>sword</graphic>
 		<type>1</type>
-		<value>20</value>
-		<gold>1</gold>
+		<value>120</value>
+		<gold>500</gold>
 	</weapon>
 	<weapon>
 		<id>11</id>
@@ -78,7 +78,7 @@
 		<graphic>sword</graphic>
 		<type>1</type>
 		<value>17</value>
-		<gold>1</gold>
+		<gold>15</gold>
 	</weapon>
 	<weapon>
 		<id>12</id>
@@ -86,7 +86,7 @@
 		<graphic>sword</graphic>
 		<type>1</type>
 		<value>27</value>
-		<gold>1</gold>
+		<gold>30</gold>
 	</weapon>
 	<weapon>
 		<id>13</id>
@@ -94,7 +94,7 @@
 		<graphic>sword</graphic>
 		<type>1</type>
 		<value>37</value>
-		<gold>1</gold>
+		<gold>50</gold>
 	</weapon>
 	<weapon>
 		<id>14</id>
@@ -102,15 +102,15 @@
 		<graphic>sword</graphic>
 		<type>1</type>
 		<value>1000</value>
-		<gold>1</gold>
+		<gold>10000</gold>
 	</weapon>
 	<weapon>
 		<id>15</id>
 		<name>Fiery Dragon Sword</name>
 		<graphic>sword</graphic>
 		<type>1</type>
-		<value>100</value>
-		<gold>1</gold>
+		<value>200</value>
+		<gold>1000</gold>
 	</weapon>
 	<weapon>
 		<id>16</id>
@@ -118,30 +118,110 @@
 		<graphic>bow</graphic>
 		<type>2</type>
 		<value>8</value>
-		<gold>1</gold>
+		<gold>2</gold>
 	</weapon>
 	<weapon>
 		<id>17</id>
 		<name>Bow +1</name>
 		<graphic>bow</graphic>
 		<type>2</type>
-		<value>8</value>
-		<gold>1</gold>
+		<value>13</value>
+		<gold>4</gold>
 	</weapon>
 	<weapon>
 		<id>18</id>
 		<name>Bow +3</name>
 		<graphic>bow</graphic>
 		<type>2</type>
-		<value>8</value>
-		<gold>1</gold>
+		<value>17</value>
+		<gold>10</gold>
 	</weapon>
 	<weapon>
 		<id>19</id>
+		<name>Longbow</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>20</value>
+		<gold>6</gold>
+	</weapon>
+	<weapon>
+		<id>20</id>
+		<name>Longbow +2</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>30</value>
+		<gold>12</gold>
+	</weapon>
+	<weapon>
+		<id>21</id>
+		<name>Longbow +4</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>60</value>
+		<gold>24</gold>
+	</weapon>
+	<weapon>
+		<id>22</id>
+		<name>Crossbow</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>45</value>
+		<gold>30</gold>
+	</weapon>
+	<weapon>
+		<id>23</id>
+		<name>Crossbow +1</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>50</value>
+		<gold>40</gold>
+	</weapon>
+	<weapon>
+		<id>24</id>
+		<name>Crossbow +6</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>80</value>
+		<gold>100</gold>
+	</weapon>
+	<weapon>
+		<id>25</id>
+		<name>Buriza</name>
+		<graphic>bow</graphic>
+		<type>2</type>
+		<value>180</value>
+		<gold>500</gold>
+	</weapon>
+	<weapon>
+		<id>26</id>
 		<name>Staff</name>
 		<graphic>staff</graphic>
 		<type>3</type>
 		<value>5</value>
-		<gold>1</gold>
+		<gold>2</gold>
+	</weapon>
+	<weapon>
+		<id>27</id>
+		<name>Staff +2</name>
+		<graphic>staff</graphic>
+		<type>3</type>
+		<value>30</value>
+		<gold>100</gold>
+	</weapon>
+	<weapon>
+		<id>28</id>
+		<name>Long Staff</name>
+		<graphic>staff</graphic>
+		<type>3</type>
+		<value>10</value>
+		<gold>20</gold>
+	</weapon>
+	<weapon>
+		<id>29</id>
+		<name>Staff of Apocalypse</name>
+		<graphic>staff</graphic>
+		<type>3</type>
+		<value>100</value>
+		<gold>1000</gold>
 	</weapon>
 </data>

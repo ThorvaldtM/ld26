@@ -42,7 +42,7 @@
 		</skills>
 		<graphic>mage</graphic>
 		<defaults>
-			<weapon>19</weapon>
+			<weapon>26</weapon>
 			<armor>1</armor>
 			<skill>3</skill>
 		</defaults>

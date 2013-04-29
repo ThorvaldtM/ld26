@@ -3,9 +3,12 @@ package com.ttermeer.ld26;
 import com.ttermeer.ld26.data.DataManager;
 import com.ttermeer.ld26.interfaces.Game;
 import com.ttermeer.ld26.interfaces.HeroSelect;
+import com.ttermeer.ld26.system.MusicManager;
 import nme.display.Sprite;
 import nme.events.Event;
+import nme.events.KeyboardEvent;
 import nme.Lib;
+import nme.ui.Keyboard;
 
 /**
  * ...
@@ -39,7 +42,22 @@ class Main extends Sprite
 		// Assets:
 		// nme.Assets.getBitmapData("img/assetname.jpg");;
 		
+		Lib.current.stage.addEventListener(KeyboardEvent.KEY_UP, shortcuts);
+		
 		startSelect();
+	}
+
+	
+	private function shortcuts(e:KeyboardEvent):Void 
+	{	
+		switch(e.keyCode) {
+			case Keyboard.NUMPAD_ADD :
+				MusicManager.instance.volume += 0.1;
+			case Keyboard.NUMPAD_SUBTRACT :
+				MusicManager.instance.volume -= 0.1;
+			case Keyboard.M :
+				MusicManager.instance.volume = 0;
+		}
 	}
 	
 	private function startSelect(?e:Event) {

@@ -29,11 +29,25 @@ class MonsterWindow extends Sprite
 	var _fxSheet:Tilesheet;
 	var _fx:Sprite;
 	var _shakeLeft:Int;
+	var _name:TextField;
 
 	public function new() 
 	{
 		super();
 		var _font:Font = Assets.getFont('fonts/vgafix.ttf');
+		
+		_name = new TextField();
+		_name.defaultTextFormat = new TextFormat(_font.fontName,12);
+		_name.antiAliasType = AntiAliasType.ADVANCED;
+		_name.embedFonts = true;
+		_name.selectable = false;
+		_name.textColor = 0xFFFFFF;
+		_name.text = "???";
+		_name.height = 20;
+		_name.width = 240;
+		_name.y = 120;
+		_name.visible = false;
+		addChild(_name);
 		
 		_hp = new TextField();
 		_hp.defaultTextFormat = new TextFormat(_font.fontName,12);
@@ -68,12 +82,30 @@ class MonsterWindow extends Sprite
 		Timer.delay(updateWalk, 250);
 	}
 	
+	public function attack() {
+		if (_monster != null) {
+			if (_monster.scaleX < 1.5) {
+				_monster.scaleX += 0.4;
+				_monster.scaleY += 0.4;
+				_monster.x = -(_monster.width - 240) / _monster.scaleX;
+				_monster.y = -(_monster.height - 160) / _monster.scaleY;
+				Timer.delay(attack, 80);
+			}else {
+				_monster.scaleX = 1;
+				_monster.scaleY = 1;
+				_monster.x = 0;
+				_monster.y = 0;
+			}
+		}
+	}
+	
 	public function walkAnimation() 
 	{
 		//TODO ANIMATION
 		if (_monster != null ) {
 			_monster.visible =  false;
 			_hp.visible = false;
+			_name.visible = false;
 		}
 		_walking = true;
 	}
@@ -129,7 +161,7 @@ class MonsterWindow extends Sprite
 	}
 	
 	public function criticalHit(?skill:String = ""):Void {
-		hit();
+		hit(skill);
 		_shakeLeft = 6;
 		shakeIt();
 	}
@@ -163,9 +195,11 @@ class MonsterWindow extends Sprite
 			removeChild(_monster);
 		}
 		_monster = AssetLoader.loadGraphic(value.graphic, 240, 160);
-		addChildAt(_monster,numChildren - 2);
+		addChildAt(_monster,numChildren - 3);
 		_hp.text = "HP : " + value.hp + "/" + value.hp;
 		_hp.visible = true;
+		_name.text = value.name;
+		_name.visible = true;
 		return _currentMonster = value;
 	}
 	
